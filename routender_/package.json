@@ -1,0 +1,16 @@
+{
+  "name": "routender",
+  "version": "1.0.0",
+  "description": "This npm packege to find the router endpoints",
+  "main": "index.js",
+  "scripts": {
+    "routender":"node index.js"
+  },
+  "author": "Sandeep Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "acorn": "^8.14.1",
+    "acorn-walk": "^8.3.4",
+    "glob": "^10.4.5"
+  }
+}
