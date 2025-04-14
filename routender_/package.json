@@ -1,6 +1,6 @@
 {
   "name": "routender",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An npm package to automatically detect and list all router endpoints in your application.",
   "main": "index.js",
   "scripts": {
