@@ -1,22 +1,25 @@
-![Router Endpoints Detector Logo](https://raw.githubusercontent.com/Sandigupta/router-endpoints-detector-npm-package-/main/assets/router-endpoints-logo.png" alt="Router Endpoints Detector Logo" width="200")
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7d5bb153-a0e5-40e1-ae0f-fd11d7e0ac2a" width="500" />
+</p>
 
-# router-endpoints-detector
+
+# routender
 
 [![build](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/Sandigupta/router-endpoints-detector-npm-package-)
 [![npm](https://img.shields.io/badge/npm-router--endpoints--detector-red.svg)](https://www.npmjs.com/package/routender)
 [![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 
-A powerful, zero-config tool to detect and visualize all API endpoints in your Node.js applications. `router-endpoints-detector` scans your project files and identifies all API routes across multiple frameworks (Express, Koa, Fastify, etc.) with a single command.
+A powerful, zero-config tool to detect and visualize all API endpoints in your Node.js applications. `routender` scans your project files and identifies all API routes across multiple frameworks (Express, Koa, Fastify, etc.) with a single command.
 
 Stop manually tracking your endpoints – let the code tell you what's there. Perfect for large codebases, team onboarding, documentation, and security audits.
 
 ## Installation
 
 ```bash
-npm install router-endpoints-detector --save-dev
+npm install routender --save-dev
 # or
-yarn add router-endpoints-detector --dev
+yarn add routender --dev
 ```
 
 ## Usage
@@ -24,7 +27,7 @@ yarn add router-endpoints-detector --dev
 Simply run the command in your project directory:
 
 ```bash
-npx router-endpoints-detector
+npx routender
 ```
 
 ## Features
@@ -43,7 +46,7 @@ npx router-endpoints-detector
 Create a script file (e.g., `detect-routes.js`):
 
 ```javascript
-const RouterEndpointsDetector = require('router-endpoints-detector');
+const RouterEndpointsDetector = require('routender');
 
 // Create detector with default options
 const detector = new RouterEndpointsDetector();
@@ -66,7 +69,7 @@ Or you can write the above code lines in your project's `index.js` file and run 
 const express = require('express');
 const app = express();
 
-const RouterEndpointsDetector = require('router-endpoints-detector');
+const RouterEndpointsDetector = require('routender');
 const detector = new RouterEndpointsDetector();
 // Print all detected endpoints
 detector.printEndpoints();
@@ -132,7 +135,7 @@ npm run routes
 ### Custom Configuration
 
 ```javascript
-const RouterEndpointsDetector = require('router-endpoints-detector');
+const RouterEndpointsDetector = require('routender');
 
 const detector = new RouterEndpointsDetector({
   // Analyze a specific subdirectory
@@ -149,7 +152,7 @@ detector.printEndpoints();
 ```
 
 ## Design principles
-Under the hood, `router-endpoints-detector` uses:
+Under the hood, `routernder` uses:
 
 1. **AST parsing** with Acorn to analyze your JavaScript code structure
 2. **Pattern recognition** to detect common router patterns
@@ -161,12 +164,6 @@ Currently detects:
 
 - Express.js routes (`app.get()`, `router.post()`, etc.)
 - Express router chains (`router.route('/path').get().post()`)
-
-## Known Limitations
-
-- May not detect dynamically constructed routes
-- Does not resolve the full path when routers are mounted with a prefix
-- Limited support for decorator-based routing (e.g., NestJS)
 
 ## License
 
