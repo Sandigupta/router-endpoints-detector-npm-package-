@@ -1,17 +1,12 @@
 {
   "name": "routender",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An npm package to automatically detect and list all router endpoints in your application.",
   "main": "index.js",
   "scripts": {
-    "routender":"node index.js"
+    "routender": "node index.js"
   },
-  "files": [
-  "src",
-  "index.js",
-  "assets",
-  "README.md"
-],
+
   "author": "Sandeep Gupta",
   "license": "ISC",
   "dependencies": {
