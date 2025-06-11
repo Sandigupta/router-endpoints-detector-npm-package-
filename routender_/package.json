@@ -1,14 +1,38 @@
 {
   "name": "routender",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "An npm package to automatically detect and list all router endpoints in your application.",
   "main": "index.js",
   "scripts": {
     "routender": "node index.js"
   },
-
-  "author": "Sandeep Gupta",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sandigupta/router-endpoints-detector-npm-package-"
+  },
+  "keywords": [
+    "express-routes",
+    "router endpoints detector npm package",
+    "api-endpoints",
+    "route-discovery",
+    " endpoint-detection",
+    "api-docs",
+    "nodejs-router",
+    "express-router",
+    "fastify-routes",
+    "koa-router",
+    "api-documentation",
+    " rest-api-tools",
+    "nodejs-tools",
+    "express-tools",
+    "route-visualization",
+    "router-analysis"
+  ],
+  "author": {
+    "name": "Sandeep Gupta",
+    "url": "https://github.com/Sandigupta"
+  },
+  "license": "MIT",
   "dependencies": {
     "acorn": "^8.14.1",
     "acorn-walk": "^8.3.4",
