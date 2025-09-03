@@ -61,7 +61,7 @@ Run it:
 ```bash
 node detect-routes.js
 ```
-
+<img width="1436" height="300" alt="Image" src="https://github.com/user-attachments/assets/e7ab15e3-ac33-41aa-9d4c-1ff4c268718b" />
 
 This allows you to see all your endpoints during application startup without creating a separate script.
 
